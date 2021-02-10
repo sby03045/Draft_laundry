@@ -21,23 +21,19 @@ import com.google.firebase.database.ValueEventListener;
 public class Laundry_Information202 extends Fragment {
     DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
     DatabaseReference mConditionRef = mDatabase.child("202").child("1");
-    String ltime = "0";
+    Integer ltime = 0;
     TextView tv;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_landuryinformation202, container, false);
         mConditionRef.setValue(20);
-
-        return view;
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
         mConditionRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                ltime = snapshot.getValue(String.class);
+                ltime = snapshot.getValue(Integer.class);
+                Log.d("tag", ltime.toString());
+                tv = (TextView) getActivity().findViewById(R.id.textView2);
+                tv.setText(ltime.toString());
             }
 
             @Override
@@ -45,12 +41,17 @@ public class Laundry_Information202 extends Fragment {
 
             }
         });
+        return view;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        tv = (TextView) getActivity().findViewById(R.id.textView2);
-        tv.setText(ltime);
     }
 }
