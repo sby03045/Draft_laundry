@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "656488774121",
+    "project_id": "draftlaundry",
+    "storage_bucket": "draftlaundry.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656488774121:android:b4b1552badf462b836f378",
+        "android_client_info": {
+          "package_name": "com.example.draft_laundry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656488774121-a44m9kjdok4ck92qn0bl8deqgl8gfflk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3sHfgty9vvOdN6MCfdVFTuGfGCgVAQCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "656488774121-a44m9kjdok4ck92qn0bl8deqgl8gfflk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
