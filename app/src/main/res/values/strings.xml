@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Draft_laundry</string>
+
+    <string-array name = "NotErrorState">
+        <item>"알림 예약하기"</item>
+        <item>"고장났어요ㅠ"</item>
+    </string-array>
+    <string-array name = "ErrorState">
+        <item>"알림 예약하기"</item>
+        <item>"수리끝났어요"</item>
+    </string-array>
 </resources>
