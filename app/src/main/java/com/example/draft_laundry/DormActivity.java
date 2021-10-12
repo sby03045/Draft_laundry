@@ -26,6 +26,9 @@ public class DormActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "201동", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), LaundryMainActivity.class);
+                intent.putExtra("dorm_num", "201");
+                startActivity(intent);
             }
         });
         dorm202.setOnClickListener(new View.OnClickListener() {
@@ -41,12 +44,18 @@ public class DormActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "203동", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), LaundryMainActivity.class);
+                intent.putExtra("dorm_num", "203");
+                startActivity(intent);
             }
         });
         dorm204.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "204동", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), LaundryMainActivity.class);
+                intent.putExtra("dorm_num", "204");
+                startActivity(intent);
             }
         });
     }
